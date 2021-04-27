@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-m519lin&9q8ppj%p&%hv*e6ilb0kbl1regeo)g(pm(8s3%=mj%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['https://zuri-dj-blog.herokuapp.com/',
 'localhost',
@@ -143,6 +143,6 @@ STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 django_heroku.settings(locals())
