@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-m519lin&9q8ppj%p&%hv*e6ilb0kbl1regeo)g(pm(8s3%=mj%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://deploy-weather-application.herokuapp.com',
+ALLOWED_HOSTS = ['https://zuri-dj-blog.herokuapp.com/',
 'localhost',
 '127.0.0.1']
 
