@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    
+
+<!-- register -->
+
+<div class="container py-5">
+    <h1>Login Page</h1>
+	<form method="POST">
+		{% csrf_token %}
+        {{ form.as_p }}
+		<button class="btn btn-primary" type="submit">Login</button>
+	</form>
+	<p class="text-center">Don't have an account? <a href="/registration/register">Register</a> </p>
+	
+	<p><a style="margin-right: 10px;" href="{% url 'password_reset' %}" >Reset Password  </a></p>
+
+</div>
+{% endblock content %}
+    
